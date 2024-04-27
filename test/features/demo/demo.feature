@@ -1,7 +1,7 @@
 Feature: Demo feature
     Feature Description
 
-    @demo
+    #@demo
     Scenario Outline: Run first demo feature
 
         Given Google page is opened

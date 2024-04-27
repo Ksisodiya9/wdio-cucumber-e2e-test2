@@ -26,3 +26,11 @@ Then(/^URL should match (.*)$/, async function(expectedURL) {
     let url = await browser.getUrl()
     await expect(url).to.equal(expectedURL)
 })
+
+Given(/^A web page is opened$/, async function(){
+  await browser.url("https://www.google.com");
+  await browser.setTimeout({implicit:15000, pageLoad:10000});
+  await browser.maximizeWindow()
+
+
+})
